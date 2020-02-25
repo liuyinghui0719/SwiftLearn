@@ -62,12 +62,24 @@ class Day3: NSObject {
                 print(i)
             case let .Level(i):
                 print(i)
-            case let .LevelStr(str0, str1):
+            case  .LevelStr(let str0,var str1):
                 print("\(str0)  \(str1)")
+                str1 = ""
         }
         
-    //    print(score)
-         
+        //枚举原始值的使用
+        enum PokerSuit:Character {
+            case spade = "♠"
+            case heart = "❤"
+            case diamond = "♦"
+            case club = "♣"
+        }
+        let suit:PokerSuit = .spade
+        print(suit.rawValue)
+        
+        
+        
+        
     }
 }
 
