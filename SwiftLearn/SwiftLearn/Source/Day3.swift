@@ -16,32 +16,32 @@ class Day3: NSObject {
     
     func Test() -> Void {
         
-    //    //枚举的简单定义和简单应用
-    //    //第一种定义方式
-    //    enum Direction{
-    //        case north
-    //        case south
-    //        case east
-    //        case west
-    //    }
-    //    //第二种定义方式
-    //    enum Direction1  {
-    //        case north,south,east,west
-    //    }
-    //
-    //
-    //    //枚举的简单使用
-    //    var dir = Direction.west
-    //    dir = Direction.north
-    //    dir = .east
-    //    print(dir)
-    //
-    //    switch dir {
-    //        case .east:
-    //            print(Direction.east)
-    //        default:
-    //        break
-    //    }
+        //枚举的简单定义和简单应用
+        //第一种定义方式
+        enum Direction{
+            case north
+            case south
+            case east
+            case west
+        }
+        //第二种定义方式
+        enum Direction1  {
+            case north,south,east,west
+        }
+    
+    
+        //枚举的简单使用
+        var dir = Direction.west
+        dir = Direction.north
+        dir = .east
+        print(dir)
+    
+        switch dir {
+            case .east:
+                print(Direction.east)
+            default:
+            break
+        }
         
         //枚举关联值的使用
         enum Score {
@@ -67,7 +67,7 @@ class Day3: NSObject {
                 str1 = ""
         }
         
-        //枚举原始值的使用
+        //枚举原始值的使用 只有在定义枚举的时候指定了类型 才可以点出原始值
         enum PokerSuit:Character {
             case spade = "♠"
             case heart = "❤"
@@ -76,6 +76,9 @@ class Day3: NSObject {
         }
         let suit:PokerSuit = .spade
         print(suit.rawValue)
+        
+        
+
         
         
         
