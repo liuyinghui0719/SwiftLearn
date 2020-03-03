@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         var day = Day3()
     }
 
-
 }
 
 
